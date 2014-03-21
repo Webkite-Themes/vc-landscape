@@ -7,7 +7,7 @@
 {{#each this.items}}
 <section class="webkite-result">
   <div class="webkite-block forty">
-    {{#facet name="Logo"}}<img src="{{displayValue}}"/>{{/facet}}
+    {{#facet name="Logo"}}<div class="image-wrapper"><img src="{{displayValue}}"/></div>{{/facet}}
     {{#facet name="Company Name"}}<h2>{{displayValue}}</h2>{{/facet}}
   </div><!--webkite-block-forty-->
   <div class="webkite-block sixty">
@@ -16,9 +16,9 @@
       <li>
         <b>location</b>
         <span class="facet-values location">
-          {{#facet name="City"}}<a href="#" class="webkite-add-filter city" data-facet="{{name}}" data-operator="is" data-value="{{this}}">{{displayValue}}</a>{{/facet}}
-          {{#facet name="State"}}<a href="#" class="webkite-add-filter state" data-facet="{{name}}" data-operator="is" data-value="{{this}}">{{displayValue}}</a>{{/facet}}
-          {{#facet name="Country"}}<a href="#" class="webkite-add-filter country" data-facet="{{name}}" data-operator="is" data-value="{{this}}">{{displayValue}}</a>{{/facet}}
+          {{#facet name="City"}}<p class="city">{{displayValue}}</p>{{/facet}}<!--
+              -->{{#facet name="State"}}<a href="#" class="webkite-add-filter state" data-facet="{{name}}" data-operator="is" data-value="{{displayValue}}">{{displayValue}}</a>{{/facet}}<!--
+              -->{{#facet name="Country"}}<a href="#" class="webkite-add-filter country" data-facet="{{name}}" data-operator="is" data-value="{{displayValue}}">{{displayValue}}</a>{{/facet}}
         </span>
       </li>
       <li>

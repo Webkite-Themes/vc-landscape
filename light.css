@@ -478,10 +478,14 @@
         font-weight: 400; }
       #webkite-results .webkite-block ul li .city, #webkite-results .webkite-block ul li .state, #webkite-results .webkite-block ul li .country {
         display: inline; }
+      #webkite-results .webkite-block ul li .city + .state:before {
+        content: ", "; }
       #webkite-results .webkite-block ul li .city + .country:before {
         content: ", "; }
       #webkite-results .webkite-block ul li .state + .country:before {
         content: ", "; }
+  #webkite-results .webkite-block .image-wrapper {
+    width: 100%; }
   #webkite-results .webkite-block img {
     max-width: 100%;
     height: auto;

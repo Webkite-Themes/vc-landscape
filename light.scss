@@ -476,9 +476,13 @@ $mainGutter: 1.25em;
         b{display: inline-block; text-align: left; width: 39%; vertical-align: text-top;font-weight: 700;}
         span.facet-values{@extend b; width:59%; font-weight: 400;}
         .city, .state, .country{display: inline;}
+        .city + .state:before{content: ", ";}
         .city + .country:before{content: ", ";}
         .state + .country:before{content: ", ";}
         }  
+      }
+    .image-wrapper{
+      width: 100%;
       }
     img {
       max-width: 100%;
