@@ -6,9 +6,12 @@
 {{#if items.length}}
 {{#each this.items}}
 <section class="webkite-result">
-  <div class="webkite-block forty">
+  <div class="webkite-block forty">{{log this}}
+    {{#if (find facets name="Logo")}}
     {{#facet name="Logo"}}<div class="image-wrapper"><img src="{{displayValue}}"/></div>{{/facet}}
+    {{else}}
     {{#facet name="Company Name"}}<h2>{{displayValue}}</h2>{{/facet}}
+    {{/if}}
   </div><!--webkite-block-forty-->
   <div class="webkite-block sixty">
   {{#facet name="Description"}}<p class="description">{{displayValue}}</p>{{/facet}}
