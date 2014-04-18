@@ -1,5 +1,3 @@
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,700");
-
 $colorVariant:dark;
 
 //CALL UNIVERSALS
@@ -21,6 +19,7 @@ $colorVariant:dark;
   padding: $mainGutter;
   font-family:"Open Sans";
   font-size: 16px;
+  font: 400 16px/normal "Open Sans";
   a{color:$linkColor;
       text-decoration: none; 
     &:hover{color: $linkHover;}
@@ -63,8 +62,9 @@ $colorVariant:dark;
         list-style-type: none;
         text-align: justify;
         padding-bottom: $mainGutter/2;
-        b{display: inline-block; text-align: left; width: 39%; vertical-align: text-top;font-weight: 700;}
-        span.facet-values{@extend b; width:59%; font-weight: 400;}
+        b, span.facet-values{display: inline-block; text-align: left; vertical-align: text-top;}
+        b{font-weight: 700; width:39%;}
+        span.facet-values{font-weight: 400; width: 59%;}
         .city, .state, .country{display: inline;}
         .city + .state:before{content: ", ";}
         .city + .country:before{content: ", ";}
